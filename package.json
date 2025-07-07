@@ -1,0 +1,24 @@
+{
+  "name": "@number-rolling/monorepo",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "build:demo": "turbo run build --filter=@number-rolling/demo",
+    "build:number-rolling": "turbo run build --filter=number-rolling",
+    "dev": "turbo run dev",
+    "dev:demo": "turbo run dev --filter=@number-rolling/demo",
+    "dev:number-rolling": "turbo run dev --filter=number-rolling",
+    "fix": "turbo run fix",
+    "fix:demo": "turbo run fix --filter=@number-rolling/demo",
+    "fix:number-rolling": "turbo run fix --filter=number-rolling"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.0",
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@10.12.4+sha256.cadfd9e6c9fcc2cb76fe7c0779a5250b632898aea5f53d833a73690c77a778d9"
+}

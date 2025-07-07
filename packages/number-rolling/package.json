@@ -1,0 +1,38 @@
+{
+  "name": "number-rolling",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./esm/index.js",
+        "types": "./esm/index.d.ts"
+      },
+      "require": {
+        "default": "./cjs/index.cjs",
+        "types": "./cjs/index.d.cts"
+      }
+    }
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsc -b && tsup",
+    "fix": "pnpm fix:lint && pnpm fix:format",
+    "fix:lint": "eslint . --fix",
+    "fix:format": "prettier --write ."
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@number-rolling/eslint-config": "workspace:*",
+    "@number-rolling/typescript-config": "workspace:*",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "eslint": "^9.29.0",
+    "tsup": "^8.5.0",
+    "typescript": "~5.8.3"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "extends": "@number-rolling/typescript-config/base.json",
+  "compilerOptions": {},
+  "include": ["src"]
+}
