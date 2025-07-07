@@ -3,6 +3,7 @@
   "author": "fecapark@gmail.com",
   "version": "0.0.0",
   "type": "module",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fecapark/react-rolling-number.git"
