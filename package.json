@@ -2,6 +2,7 @@
   "name": "@number-rolling/monorepo",
   "private": true,
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "build": "turbo run build",
     "build:demo": "turbo run build --filter=@number-rolling/demo",
     "build:number-rolling": "turbo run build --filter=number-rolling",
