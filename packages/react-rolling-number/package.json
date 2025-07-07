@@ -42,8 +42,7 @@
     "build": "tsc -b && tsup",
     "fix": "pnpm fix:lint && pnpm fix:format",
     "fix:lint": "eslint . --fix",
-    "fix:format": "prettier --write .",
-    "prepare": "rm -rf dist esm && pnpm build"
+    "fix:format": "prettier --write ."
   },
   "devDependencies": {
     "react": "^19.1.0",
