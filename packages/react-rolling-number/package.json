@@ -1,8 +1,26 @@
 {
   "name": "react-rolling-number",
-  "private": true,
+  "author": "fecapark@gmail.com",
   "version": "0.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fecapark/react-rolling-number.git"
+  },
+  "keywords": [
+    "react",
+    "rolling-number",
+    "rolling",
+    "number",
+    "component",
+    "animation",
+    "library"
+  ],
+  "sideEffects": false,
+  "access": "public",
+  "main": "./dist/index.cjs",
+  "module": "./esm/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": {
@@ -10,17 +28,22 @@
         "types": "./esm/index.d.ts"
       },
       "require": {
-        "default": "./cjs/index.cjs",
-        "types": "./cjs/index.d.cts"
+        "default": "./dist/index.cjs",
+        "types": "./dist/index.d.cts"
       }
     }
   },
+  "files": [
+    "dist/**/*",
+    "esm/**/*"
+  ],
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsc -b && tsup",
     "fix": "pnpm fix:lint && pnpm fix:format",
     "fix:lint": "eslint . --fix",
-    "fix:format": "prettier --write ."
+    "fix:format": "prettier --write .",
+    "prepare": "rm -rf dist esm && pnpm build"
   },
   "devDependencies": {
     "react": "^19.1.0",
@@ -32,5 +55,8 @@
     "eslint": "^9.29.0",
     "tsup": "^8.5.0",
     "typescript": "~5.8.3"
+  },
+  "peerDependencies": {
+    "react": "*"
   }
 }
