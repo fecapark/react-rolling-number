@@ -4,4 +4,6 @@ node_modules
 # Build Outputs
 dist
 esm
-
+tsconfig.tsbuildinfo
+tsconfig.app.tsbuildinfo
+tsconfig.node.tsbuildinfo
