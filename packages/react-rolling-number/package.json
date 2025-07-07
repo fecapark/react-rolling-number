@@ -1,5 +1,5 @@
 {
-  "name": "number-rolling",
+  "name": "react-rolling-number",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -25,8 +25,8 @@
   "devDependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "@number-rolling/eslint-config": "workspace:*",
-    "@number-rolling/typescript-config": "workspace:*",
+    "@react-rolling-number/eslint-config": "workspace:*",
+    "@react-rolling-number/typescript-config": "workspace:*",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "eslint": "^9.29.0",

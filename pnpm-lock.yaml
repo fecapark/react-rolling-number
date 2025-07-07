@@ -20,20 +20,20 @@ importers:
 
   apps/demo:
     dependencies:
-      number-rolling:
-        specifier: workspace:*
-        version: link:../../packages/number-rolling
       react:
         specifier: ^19.1.0
         version: 19.1.0
       react-dom:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
+      react-rolling-number:
+        specifier: workspace:*
+        version: link:../../packages/react-rolling-number
     devDependencies:
-      '@number-rolling/eslint-config':
+      '@react-rolling-number/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
-      '@number-rolling/typescript-config':
+      '@react-rolling-number/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/react':
@@ -100,12 +100,12 @@ importers:
         specifier: ^8.35.1
         version: 8.35.1(eslint@9.30.1)(typescript@5.8.3)
 
-  packages/number-rolling:
+  packages/react-rolling-number:
     devDependencies:
-      '@number-rolling/eslint-config':
+      '@react-rolling-number/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      '@number-rolling/typescript-config':
+      '@react-rolling-number/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/react':

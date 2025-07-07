@@ -1,5 +1,5 @@
 {
-  "name": "@number-rolling/demo",
+  "name": "@react-rolling-number/demo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,11 +14,11 @@
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "number-rolling": "workspace:*"
+    "react-rolling-number": "workspace:*"
   },
   "devDependencies": {
-    "@number-rolling/eslint-config": "workspace:*",
-    "@number-rolling/typescript-config": "workspace:*",
+    "@react-rolling-number/eslint-config": "workspace:*",
+    "@react-rolling-number/typescript-config": "workspace:*",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react-swc": "^3.10.2",

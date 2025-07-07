@@ -1,5 +1,5 @@
 {
-  "extends": "@number-rolling/typescript-config/node.json",
+  "extends": "@react-rolling-number/typescript-config/node.json",
   "compilerOptions": {},
   "include": ["vite.config.ts"]
 }

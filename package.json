@@ -1,17 +1,17 @@
 {
-  "name": "@number-rolling/monorepo",
+  "name": "@react-rolling-number/monorepo",
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "turbo run build",
-    "build:demo": "turbo run build --filter=@number-rolling/demo",
-    "build:number-rolling": "turbo run build --filter=number-rolling",
+    "build:demo": "turbo run build --filter=@react-rolling-number/demo",
+    "build:react-rolling-number": "turbo run build --filter=@react-rolling-number/react-rolling-number",
     "dev": "turbo run dev",
-    "dev:demo": "turbo run dev --filter=@number-rolling/demo",
-    "dev:number-rolling": "turbo run dev --filter=number-rolling",
+    "dev:demo": "turbo run dev --filter=@react-rolling-number/demo",
+    "dev:react-rolling-number": "turbo run dev --filter=@react-rolling-number/react-rolling-number",
     "fix": "turbo run fix",
-    "fix:demo": "turbo run fix --filter=@number-rolling/demo",
-    "fix:number-rolling": "turbo run fix --filter=number-rolling"
+    "fix:demo": "turbo run fix --filter=@react-rolling-number/demo",
+    "fix:react-rolling-number": "turbo run fix --filter=@react-rolling-number/react-rolling-number"
   },
   "devDependencies": {
     "prettier": "^3.6.0",

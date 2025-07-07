@@ -1,4 +1,4 @@
-import { Roller } from 'number-rolling';
+import { Roller } from 'react-rolling-number';
 
 export const App = () => {
   return (
