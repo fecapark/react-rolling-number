@@ -1,0 +1,5 @@
+{
+  "extends": "@react-rolling-number/typescript-config/base.json",
+  "compilerOptions": {},
+  "include": ["src"]
+}

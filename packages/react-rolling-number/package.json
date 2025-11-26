@@ -1,0 +1,48 @@
+{
+  "name": "react-rolling-number",
+  "version": "0.0.0",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./esm/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./esm/index.js",
+        "types": "./esm/index.d.ts"
+      },
+      "require": {
+        "default": "./dist/index.cjs",
+        "types": "./dist/index.d.cts"
+      }
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "esm/**/*"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsc -b && tsup",
+    "fix": "pnpm fix:lint && pnpm fix:format",
+    "fix:lint": "eslint . --fix",
+    "fix:format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@react-rolling-number/eslint-config": "workspace:*",
+    "@react-rolling-number/typescript-config": "workspace:*",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "catalog:",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "react": "*"
+  }
+}
