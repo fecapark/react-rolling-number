@@ -5,14 +5,18 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": ["dist/**", "esm/**"]
-    },
-    "fix": {
-      "dependsOn": ["^fix"]
+      "outputs": ["build/**", "dist/**", "esm/**"]
     },
     "dev": {
-      "cache": false,
-      "persistent": true
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "dependsOn": ["^dev"],
+      "persistent": true,
+      "cache": false
+    },
+    "fix": {
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "dependsOn": ["^fix"],
+      "outputs": ["build/**", "dist/**", "esm/**"]
     }
   }
 }

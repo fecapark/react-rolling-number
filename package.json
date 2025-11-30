@@ -6,18 +6,22 @@
     "preinstall": "npx only-allow pnpm",
     "build": "turbo run build",
     "build:react-rolling-number": "turbo run build --filter=@react-rolling-number/react-rolling-number",
+    "build:demo": "turbo run build --filter=@react-rolling-number/demo",
     "dev": "turbo run dev",
     "dev:react-rolling-number": "turbo run dev --filter=@react-rolling-number/react-rolling-number",
+    "dev:demo": "turbo run dev --filter=@react-rolling-number/demo",
     "fix": "turbo run fix",
-    "fix:react-rolling-number": "turbo run fix --filter=@react-rolling-number/react-rolling-number"
+    "fix:react-rolling-number": "turbo run fix --filter=@react-rolling-number/react-rolling-number",
+    "fix:demo": "turbo run fix --filter=@react-rolling-number/demo"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.1",
     "turbo": "^2.6.1",
     "typescript": "^5.9.3"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "packageManager": "pnpm@10.23.0+sha512.21c4e5698002ade97e4efe8b8b4a89a8de3c85a37919f957e7a0f30f38fbc5bbdd05980ffe29179b2fb6e6e691242e098d945d1601772cad0fef5fb6411e2a4b"
 }
