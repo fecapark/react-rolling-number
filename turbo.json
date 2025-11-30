@@ -5,7 +5,7 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": ["build/**", "dist/**", "esm/**"]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**", "esm/**"]
     },
     "dev": {
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
@@ -20,12 +20,12 @@
     "check": {
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "dependsOn": ["^build", "^check"],
-      "outputs": ["build/**", "dist/**", "esm/**"]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**", "esm/**"]
     },
     "check:type": {
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "dependsOn": ["^build", "^check:type"],
-      "outputs": ["build/**", "dist/**", "esm/**"]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**", "esm/**"]
     },
     "check:lint": {
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
