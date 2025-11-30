@@ -1,9 +1,26 @@
 {
   "name": "react-rolling-number",
+  "author": "fecapark@gmail.com",
   "version": "0.0.0",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fecapark/react-rolling-number.git"
+  },
+  "keywords": [
+    "react",
+    "rolling-number",
+    "rolling",
+    "number",
+    "component",
+    "animation",
+    "animated",
+    "motion",
+    "library"
+  ],
   "sideEffects": false,
+  "access": "public",
   "main": "./dist/index.cjs",
   "module": "./esm/index.js",
   "types": "./dist/index.d.cts",
