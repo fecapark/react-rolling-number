@@ -1,0 +1,44 @@
+name: Deploy Demo To Vercel
+
+# Todo:
+# - 1. fix running quality checking twice when push to main
+# - 2. cache pnpm install
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'apps/demo/**'
+      - 'packages/react-rolling-number/**'
+
+jobs:
+  quality-check:
+    uses: ./.github/workflows/integration.yml
+
+  deploy:
+    needs: quality-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v5
+
+      - name: Install Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 20
+
+      - name: Prepare Corepack
+        run: corepack prepare pnpm@10 --activate
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Run pnpm install
+        run: pnpm install --frozen-lockfile
+
+      - name: Deploy to Vercel
+        run: pnpm dlx vercel deploy --yes --prod --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}

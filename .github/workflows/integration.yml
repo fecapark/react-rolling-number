@@ -1,6 +1,7 @@
 name: Integration
 
 on:
+  workflow_call:
   pull_request:
     types: [synchronize, opened]
     branches:
