@@ -1,11 +1,72 @@
 @import 'tailwindcss';
 
+@keyframes fadeout {
+  to {
+    opacity: 0;
+  }
+}
+
 :root {
   --background: #141414;
+  --layerBackground: #202020;
+  --hoverBackground: #302e30;
+  --hoverBackgroundAccent: #004a77;
+  --selectedBackground: #404040;
+  --negativeBackground: #e52b05;
+
+  --neutral: white;
+  --neutralMuted: #e0e0e0;
+  --neutralSubtle: #b2b0b2;
+  --neutralPlaceholder: #797878;
+  --neutralInspector: #a19da1;
+
+  --blueAccent: #2d79e6;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-layerBackground: var(--layerBackground);
+  --color-hoverBackground: var(--hoverBackground);
+  --color-hoverBackgroundAccent: var(--hoverBackgroundAccent);
+  --color-selectedBackground: var(--selectedBackground);
+  --color-negativeBackground: var(--negativeBackground);
+
+  --color-neutral: var(--neutral);
+  --color-neutralMuted: var(--neutralMuted);
+  --color-neutralSubtle: var(--neutralSubtle);
+  --color-neutralPlaceholder: var(--neutralPlaceholder);
+  --color-neutralInspector: var(--neutralInspector);
+  --color-blueAccent: var(--blueAccent);
+
+  --font-sans: var(--soehne), var(--noto-sans-kr), sans-serif;
+
+  --ease-materialBase: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@theme {
+  --animate-fadeout: fadeout 0.5s ease-in-out forwards 0.2s;
+}
+
+@layer base {
+  a {
+    color: var(--blueAccent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  input[type='number'] {
+    appearance: textfield;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }
 
 html,
@@ -14,5 +75,5 @@ body {
   height: 100%;
 
   background-color: var(--background);
-  color: white;
+  color: var(--neutral);
 }
