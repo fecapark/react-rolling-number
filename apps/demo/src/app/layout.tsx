@@ -33,8 +33,8 @@ const Soehne = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'React Rolling Number Demo',
-  description: 'A demo app for React Rolling Number component',
+  title: 'React Rolling Number',
+  description: 'A smooth, customizable React component for rolling number animations.',
 };
 
 const RootLayout = ({
