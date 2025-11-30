@@ -12,7 +12,13 @@
     "dev:demo": "turbo run dev --filter=@react-rolling-number/demo",
     "fix": "turbo run fix",
     "fix:react-rolling-number": "turbo run fix --filter=@react-rolling-number/react-rolling-number",
-    "fix:demo": "turbo run fix --filter=@react-rolling-number/demo"
+    "fix:demo": "turbo run fix --filter=@react-rolling-number/demo",
+    "check": "turbo run check",
+    "check:react-rolling-number": "turbo run check --filter=@react-rolling-number/react-rolling-number",
+    "check:demo": "turbo run check --filter=@react-rolling-number/demo",
+    "check-all:type": "turbo run check:type",
+    "check-all:lint": "turbo run check:lint",
+    "check-all:format": "turbo run check:format"
   },
   "devDependencies": {
     "prettier": "^3.6.2",

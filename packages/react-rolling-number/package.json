@@ -45,7 +45,11 @@
     "build": "tsc -b && tsup",
     "fix": "pnpm fix:lint && pnpm fix:format",
     "fix:lint": "eslint . --fix",
-    "fix:format": "prettier --write ."
+    "fix:format": "prettier --write .",
+    "check": "pnpm check:lint && pnpm check:format && pnpm check:type",
+    "check:lint": "eslint .",
+    "check:format": "prettier . --list-different",
+    "check:type": "tsc --noEmit"
   },
   "devDependencies": {
     "@react-rolling-number/eslint-config": "workspace:*",

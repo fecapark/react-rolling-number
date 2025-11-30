@@ -15,8 +15,25 @@
     },
     "fix": {
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "dependsOn": ["^fix"],
+      "dependsOn": ["^fix"]
+    },
+    "check": {
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "dependsOn": ["^build", "^check"],
       "outputs": ["build/**", "dist/**", "esm/**"]
+    },
+    "check:type": {
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "dependsOn": ["^build", "^check:type"],
+      "outputs": ["build/**", "dist/**", "esm/**"]
+    },
+    "check:lint": {
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "dependsOn": ["^check:lint"]
+    },
+    "check:format": {
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "dependsOn": ["^check:format"]
     }
   }
 }
