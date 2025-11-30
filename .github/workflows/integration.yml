@@ -1,0 +1,39 @@
+name: Integration
+
+on:
+  pull_request:
+    types: [synchronize, opened]
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  check-quality:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        command: ['lint', 'type', 'format']
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v5
+
+      - name: Install Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 20
+          registry-url: 'https://npm.pkg.github.com/'
+
+      - name: Prepare Corepack
+        run: corepack prepare pnpm@10 --activate
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Run pnpm install
+        run: pnpm install --frozen-lockfile
+
+      - name: Run check-all:${{ matrix.command }}
+        run: pnpm check-all:${{ matrix.command }}
