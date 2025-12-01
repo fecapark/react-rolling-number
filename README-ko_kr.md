@@ -4,6 +4,12 @@
   부드럽고 커스터마이징 가능한 React 숫자 애니메이션 컴포넌트
 </h3>
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/react-rolling-number" rel="noopener noreferrer nofollow" ><img src="https://img.shields.io/npm/v/react-rolling-number?color=0368FF&label=version" alt="npm version"></a>
+  <img alt="NPM License" src="https://img.shields.io/npm/l/react-rolling-number?color=FF2B6E">
+</p>
+
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e44f5030-c6a2-4513-88dc-907320c02b26" alt="demo gif" width="700" />
 </div>
