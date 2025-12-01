@@ -9,18 +9,17 @@
   <img alt="NPM License" src="https://img.shields.io/npm/l/react-rolling-number?color=FF2B6E">
 </p>
 
-
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e44f5030-c6a2-4513-88dc-907320c02b26" alt="demo gif" width="700" />
 </div>
 
 <br />
 
-<p align="center"><a href="https://github.com/fecapark/react-rolling-number/blob/main/README.md">English</a> | <b>한국어</b></p>
+<p align="center"><a href="https://github.com/fecapark/react-rolling-number/blob/main/README.md">영어</a> | <b>한국어</b></p>
 
 <br />
 
-## Table of Contents
+## 목차
 
 1. [왜 react-rolling-number 인가요?](#왜-react-rolling-number-인가요)
 2. [📦 설치](#-설치)

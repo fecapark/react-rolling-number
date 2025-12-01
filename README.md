@@ -15,8 +15,7 @@
 
 <br />
 
-<p align="center"><b>English</b> | <a href="https://github.com/fecapark/react-rolling-number/blob/main/README-ko_kr.md">한국어</a></p>
-
+<p align="center"><b>English</b> | <a href="https://github.com/fecapark/react-rolling-number/blob/main/README-ko_kr.md">Korean</a></p>
 
 <br />
 
@@ -85,19 +84,19 @@ pnpm add react-rolling-number
 import { Roller } from 'react-rolling-number';
 
 function Component() {
-  return <Roller value={123456} />
+  return <Roller value={123456} />;
 }
 ```
 
 ### Next.js (13+)
 
 ```tsx
-"use client"
+'use client';
 
 import { Roller } from 'react-rolling-number';
 
 function Component() {
-  return <Roller value={123456} />
+  return <Roller value={123456} />;
 }
 ```
 
@@ -105,30 +104,29 @@ function Component() {
 
 ## ⚙️ Props
 
-| Name | Type | Default | Description |
-|------|------|---------|-------------|
-| `value` | `number \| string` | *required* | The number to display |
-| `commaize` | `boolean` | `true` | Add thousands separators |
-| `showPlusSign` | `boolean` | `false` | Show `+` sign for positive numbers |
-| `align` | `'left' \| 'center' \| 'right'` | `'center'` | Anchor point for width expansion |
-| `prefix` | `ReactNode` | - | Content to display before the number |
-| `suffix` | `ReactNode` | - | Content to display after the number |
-| `animation` | `RollerAnimationType` | - | Animation configuration |
+| Name           | Type                            | Default    | Description                          |
+| -------------- | ------------------------------- | ---------- | ------------------------------------ |
+| `value`        | `number \| string`              | _required_ | The number to display                |
+| `commaize`     | `boolean`                       | `true`     | Add thousands separators             |
+| `showPlusSign` | `boolean`                       | `false`    | Show `+` sign for positive numbers   |
+| `align`        | `'left' \| 'center' \| 'right'` | `'center'` | Anchor point for width expansion     |
+| `prefix`       | `ReactNode`                     | -          | Content to display before the number |
+| `suffix`       | `ReactNode`                     | -          | Content to display after the number  |
+| `animation`    | `RollerAnimationType`           | -          | Animation configuration              |
 
 ### Animation Options (`RollerAnimationType`)
 
-| Name | Type | Default | Description |
-|--------|------|---------|-------------|
-| `rollWay` | `'up' \| 'down'` | `'down'` | Direction of rolling animation |
-| `rollDuration` | `number` | `0.6` | Duration of roll animation (seconds) |
-| `shiftDuration` | `number` | `0.45` | Duration of width shift animation (seconds) |
-| `stagger` | `boolean` | `false` | Animate digits/separators/decimals sequentially |
-| `animateDiff` | `boolean` | `false` | Only animate digits that changed |
-| `ease` | `Easing` | `expoOut` | Cubic-bezier based easing function |
+| Name            | Type             | Default   | Description                                     |
+| --------------- | ---------------- | --------- | ----------------------------------------------- |
+| `rollWay`       | `'up' \| 'down'` | `'down'`  | Direction of rolling animation                  |
+| `rollDuration`  | `number`         | `0.6`     | Duration of roll animation (seconds)            |
+| `shiftDuration` | `number`         | `0.45`    | Duration of width shift animation (seconds)     |
+| `stagger`       | `boolean`        | `false`   | Animate digits/separators/decimals sequentially |
+| `animateDiff`   | `boolean`        | `false`   | Only animate digits that changed                |
+| `ease`          | `Easing`         | `expoOut` | Cubic-bezier based easing function              |
 
 <br />
 
 ## 👩🏻‍⚖️ License
 
 MIT © Sanghyeok Park (fecapark). For more details, see [LICENSE](https://github.com/fecapark/react-rolling-number/blob/main/LICENSE)
-
