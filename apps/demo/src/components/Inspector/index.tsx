@@ -27,7 +27,7 @@ export const Inspector = ({ option, setOption }: Props) => {
   const [open, setOpen] = useState(true);
 
   return (
-    <div className="bg-background fixed top-0 right-8 z-10 flex w-full max-w-[340px] flex-col items-center">
+    <div className="bg-background fixed top-0 right-1/2 z-10 flex w-full max-w-[340px] translate-x-1/2 flex-col items-center lg:right-8 lg:translate-x-0">
       <button
         className="bg-layerBackground hover:bg-hoverBackground w-full cursor-pointer py-2 text-sm"
         onClick={() => setOpen((prev) => !prev)}
