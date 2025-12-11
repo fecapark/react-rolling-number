@@ -60,8 +60,8 @@
     "@vanilla-extract/esbuild-plugin": "^2.3.20",
     "eslint": "catalog:",
     "eslint-plugin-react-refresh": "^0.4.24",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   },
