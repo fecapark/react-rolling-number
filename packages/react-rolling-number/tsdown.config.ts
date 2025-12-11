@@ -1,20 +1,20 @@
-import type { Options } from 'tsup';
+import type { UserConfig } from 'tsdown';
 
 import { vanillaExtractPlugin } from '@vanilla-extract/esbuild-plugin';
-import { defineConfig } from 'tsup';
+import { defineConfig } from 'tsdown';
 
 const importBuiltCSS = {
   esm: "import './index.css'",
   cjs: "require('./index.css')",
 };
 
-const defaultConfig: Options = {
+const defaultConfig: UserConfig = {
   entry: ['src/index.ts'],
   clean: true,
   dts: true,
   minify: true,
   sourcemap: false,
-  esbuildPlugins: [vanillaExtractPlugin()],
+  plugins: [vanillaExtractPlugin()],
 };
 
 export default defineConfig([
