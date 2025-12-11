@@ -1,8 +1,7 @@
 name: Deploy Demo To Vercel
 
 # Todo:
-# - 1. fix running quality checking twice when push to main
-# - 2. cache pnpm install
+# - 1. cache pnpm install
 
 on:
   push:
