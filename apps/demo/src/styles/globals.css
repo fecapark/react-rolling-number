@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+@import './colors.css';
+@import './fonts.css';
+@import './animations.css';
+
+@layer base {
+  a {
+    color: var(--blueAccent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  input[type='number'] {
+    appearance: textfield;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--background);
+    color: var(--neutral);
+  }
+}

@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+
+@theme inline {
+  /* Declare from app/layout.tsx, next/font */
+  --font-sans: var(--soehne), var(--noto-sans-kr), sans-serif;
+}

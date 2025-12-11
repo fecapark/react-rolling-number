@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@keyframes fadeout {
+  to {
+    opacity: 0;
+  }
+}
+
+@theme {
+  /* Easings */
+  --ease-materialBase: cubic-bezier(0.2, 0, 0, 1);
+
+  /* Animations */
+  --animate-fadeout: fadeout 0.5s ease-in-out forwards 0.2s;
+}
