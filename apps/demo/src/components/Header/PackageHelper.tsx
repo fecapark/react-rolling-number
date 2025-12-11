@@ -54,7 +54,7 @@ export const PackageHelper = () => {
           return (
             <button
               className={cn(
-                'relative flex h-full cursor-pointer px-3 text-xl',
+                'relative flex h-full cursor-pointer items-center justify-center px-3 text-xl',
                 selected
                   ? 'bg-selectedBackground'
                   : 'text-neutralPlaceholder hover:bg-hoverBackgroundAccent ease-materialBase transition-colors duration-200',
