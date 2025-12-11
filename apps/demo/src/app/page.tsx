@@ -11,7 +11,7 @@ import { Header } from '@/components/Header';
 import { Inspector } from '@/components/Inspector';
 
 const rollerContainer = tv({
-  base: 'relative w-full px-3 text-5xl leading-[1.1]',
+  base: 'relative w-full px-3 text-4xl leading-[1.1] md:text-5xl',
   variants: {
     align: {
       left: 'translate-x-[calc(50%-180px)]',

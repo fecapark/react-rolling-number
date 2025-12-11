@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Noto_Sans_KR } from 'next/font/google';
 import localFont from 'next/font/local';
 
-import './globals.css';
+import '../styles/globals.css';
 
 const NotoSansKR = Noto_Sans_KR({
   subsets: ['latin'],

@@ -22,7 +22,7 @@ export const PackageHelper = () => {
   };
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex flex-col items-center justify-center gap-2 lg:flex-row lg:gap-0">
       <div className="bg-layerBackground text-neutralSubtle relative flex h-[42px] min-w-[320px] items-center justify-center rounded-md">
         <div className="text-sm font-medium">
           <span>{selectedManager.name} </span>
@@ -47,7 +47,7 @@ export const PackageHelper = () => {
         />
       </div>
 
-      <div className="bg-layerBackground ml-4 flex h-9 items-center overflow-hidden rounded-md">
+      <div className="bg-layerBackground flex h-9 items-center overflow-hidden rounded-md lg:ml-4">
         {packageManagers.map(({ name, color, icon, withBackground }) => {
           const selected = name === selectedManagerName;
 

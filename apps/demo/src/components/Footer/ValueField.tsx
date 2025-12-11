@@ -41,20 +41,43 @@ export const ValueField = ({ value, onValueChange }: Props) => {
   };
 
   return (
-    <div className="flex items-center gap-2">
-      <button className={stepButton({ icon: false })} onClick={() => onValueChange(0)}>
-        0
-      </button>
-      <button
-        className={stepButton({ icon: true })}
-        onClick={() => onValueChange((value ?? 0) * -1)}
-      >
-        <IconWrapper>
-          <PiPlusMinusBold />
-        </IconWrapper>
-      </button>
+    <div className="flex flex-col items-center gap-4 md:flex-row md:gap-2">
+      <div className="order-2 flex items-center gap-2 md:contents">
+        <div className="flex items-center gap-2 md:order-1">
+          <button className={stepButton({ icon: false })} onClick={() => onValueChange(0)}>
+            0
+          </button>
+          <button
+            className={stepButton({ icon: true })}
+            onClick={() => onValueChange((value ?? 0) * -1)}
+          >
+            <IconWrapper>
+              <PiPlusMinusBold />
+            </IconWrapper>
+          </button>
+        </div>
 
-      <div className="relative">
+        <div className="flex items-center gap-2 md:order-3">
+          <button
+            className={stepButton({ icon: true })}
+            onClick={() => onValueChange((value ?? 0) + 1)}
+          >
+            <IconWrapper>
+              <MdAdd />
+            </IconWrapper>
+          </button>
+          <button
+            className={stepButton({ icon: true })}
+            onClick={() => onValueChange((value ?? 0) - 1)}
+          >
+            <IconWrapper>
+              <LuMinus />
+            </IconWrapper>
+          </button>
+        </div>
+      </div>
+
+      <div className="relative order-1 md:order-2">
         <NumberInput
           className="bg-layerBackground min-w-[320px] rounded-full px-6 py-4 text-center text-lg font-medium tracking-widest"
           onChange={onValueChange}
@@ -67,22 +90,6 @@ export const ValueField = ({ value, onValueChange }: Props) => {
           <MdRefresh />
         </button>
       </div>
-      <button
-        className={stepButton({ icon: true })}
-        onClick={() => onValueChange((value ?? 0) + 1)}
-      >
-        <IconWrapper>
-          <MdAdd />
-        </IconWrapper>
-      </button>
-      <button
-        className={stepButton({ icon: true })}
-        onClick={() => onValueChange((value ?? 0) - 1)}
-      >
-        <IconWrapper>
-          <LuMinus />
-        </IconWrapper>
-      </button>
     </div>
   );
 };
