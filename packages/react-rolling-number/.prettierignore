@@ -1,4 +1,9 @@
 .turbo
+pnpm-lock.yaml
 node_modules
 dist
 esm
+**/*.d.ts
+**/*.d.cts
+**/*.tgz
+

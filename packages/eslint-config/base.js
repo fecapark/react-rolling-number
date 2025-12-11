@@ -9,7 +9,7 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 import globals from 'globals';
 
 const eslintConfig = defineConfig([
-  globalIgnores(['dist', 'build', 'node_modules']),
+  globalIgnores(['.turbo', 'esm', 'dist', 'build', 'node_modules', '*.d.{ts,cts}', '*.tgz']),
   {
     files: ['**/*.{ts,tsx}'],
     extends: [

@@ -1,3 +1,11 @@
+.turbo
+.next
 pnpm-lock.yaml
 node_modules
-.turbo
+dist
+esm
+**/*.d.ts
+**/*.d.cts
+**/*.tgz
+
+# Todo: codegen from packages
