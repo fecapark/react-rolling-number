@@ -6,9 +6,6 @@ on:
     types: [synchronize, opened]
     branches:
       - main
-  push:
-    branches:
-      - main
 
 jobs:
   check-quality:
