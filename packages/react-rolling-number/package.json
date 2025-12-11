@@ -43,6 +43,7 @@
   "scripts": {
     "dev": "tsdown --watch",
     "build": "tsc -b && tsdown",
+    "publish": "pnpm build && pnpm publish --public",
     "fix": "pnpm fix:lint && pnpm fix:format",
     "fix:lint": "eslint . --fix",
     "fix:format": "prettier --write .",
